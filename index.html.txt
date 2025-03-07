@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .courses {
+            margin: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learn English Online</h1>
+        <nav>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="courses" class="courses">
+        <h2>Our English Courses</h2>
+        
+        <div class="course">
+            <h3>Beginner English Course</h3>
+            <p>Learn the basics of English with our expert tutors.</p>
+            <span>$19.99</span>
+            <button onclick="buyNow('Beginner English Course', 19.99)">Buy Now</button>
+        </div>
+
+        <div class="course">
+            <h3>Intermediate English Course</h3>
+            <p>Improve your English skills and gain confidence.</p>
+            <span>$29.99</span>
+            <button onclick="buyNow('Intermediate English Course', 29.99)">Buy Now</button>
+        </div>
+
+        <div class="course">
+            <h3>Advanced English Course</h3>
+            <p>Master the English language like a pro!</p>
+            <span>$39.99</span>
+            <button onclick="buyNow('Advanced English Course', 39.99)">Buy Now</button>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@learnenglish.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Learn English Online. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function buyNow(course, price) {
+            alert("Thank you for purchasing the " + course + " for $" + price + "! We will contact you soon.");
+        }
+    </script>
+
+</body>
+</html>
